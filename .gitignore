@@ -149,6 +149,8 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
 .envrc
 .venv
 env/
@@ -208,6 +210,12 @@ tempCodeRunnerFile.py
 
 # PyPI configuration file
 .pypirc
+
+# Collected datasets (keep directory structure only)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 
 # Marimo
 marimo/_static/
